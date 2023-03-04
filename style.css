@@ -1,0 +1,349 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #800000;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: #800000;
+    font-weight: 700;
+}
+span, p {
+    color: #21252f;
+}
+html, body {
+    width: 100%;
+}
+
+.flex-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.flex-column-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header & Navigation Section */
+.logo img {
+    width: 50px;
+}
+header {
+    width: 100%;
+    height: 85px;
+    text-align: center;
+}
+.navigation a {
+    text-decoration: none;
+}
+.navigation ul {
+    list-style-type: none;
+}
+.nav-item {
+    width: calc(100%/5);
+    padding: 5px 0;
+    color: #800000;
+    font-weight: 400;
+}
+.nav-link:hover, .nav-link:active, .nav-link:focus  {
+    color: #800000;
+    font-weight: 600;
+}
+
+/* Hero Section */
+section {
+    width: 100%;
+}
+.hero-section {
+    height: 650px;
+    background-image: url(assets/cover.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.hero-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(42, 0, 0, 0.8);
+}
+.hero-container h1 {
+    font-size:xx-large;
+}
+.hero-container h1, .hero-container span {
+    color:#FCFCFC;
+}
+.hero-name h1 {
+    margin-left: 10px;
+    font-family: 'Titillium Web', sans-serif;
+}
+.hero-title {
+    width: 50%;
+    margin-top: 25px;
+    text-align: center;
+}
+.hero-cv {
+    margin-top: 35px;
+}
+.hero-cv a {
+    text-decoration: none;
+    padding: 15px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    color:#FCFCFC;
+    background-color: maroon;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.hero-cv a:hover {
+    text-decoration: none;
+    padding: 15px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    color:#FCFCFC;
+    background-color: maroon;
+    border: 1px solid #BBBBBB;
+    display: inline-block;
+}
+
+/* Scroll Up */
+.scroll-btn-container {
+    width: 100%;
+}
+.scroll-up-btn {
+    padding: 10px;
+    background-color: rgba(250, 250, 250, 0.5);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 5px 5px 5px 5px;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about-section {
+    width: 100%;
+    padding: 100px 0;
+}
+.about-container {
+    width: 100%;
+}
+.about-title {
+    width: 100%;
+    margin: 25px 0;
+}
+.section-hr {
+    width: 55%;
+    height:5px;
+    margin: 5px 0 15px 0;
+    border-bottom: 2px solid #800000;
+}
+.about-content {
+    width: 100%;
+    padding: 0 5%;
+}
+.about-content strong {
+    color:#21252f;
+}
+.about-name {
+    color: #800000;
+    font-weight: 700;
+}
+.about-content-left {
+    width: 120px;
+}
+.about-content-left img {
+    border-radius: 60px;
+    border: 3px solid #21252f;
+}
+.about-content-right {
+    text-align: center;
+}
+.about-content-right p {
+    margin-top: 15px;
+}
+
+/* Skills Section */
+.skills-section {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #FBFBFB;
+}
+.skills-title {
+    width: 100%;
+    margin: 25px 0;
+}
+.skills-item {
+    width: 80%;
+    text-align: center;
+}
+.skills-item span {
+    padding: 10px;
+    margin: 5px; 
+    color: #800000;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    background-color:#FCFCFC;
+    border: 1px solid #800000;
+    display: inline-block;
+    box-shadow: 2px 3px #21252f;
+
+}
+.skills-item-desc p {
+    color: #000;
+    margin-top: 10px;
+    display: list-item;
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+/* Project Section */
+.project-grid-section {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #21252f;
+}
+.project-grid-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+}
+.project-grid-items {
+    margin-bottom: 25px;
+}
+.project-grid-items img {
+    width: 90%;
+}
+.project-title {
+    width: 100%;
+    margin: 25px 0;
+}
+.project-title h3 {
+    color: #fff;
+}
+.project-title .section-hr {
+    width: 55%;
+    height:5px;
+    margin: 5px 0 15px 0;
+    border-bottom: 2px solid #ffffff;
+}
+.project-item-title {
+    margin-top: 20px;
+}
+.project-item-desc,
+.project-item-skills,
+.project-item-links {
+    margin-top: 8px;
+}
+
+.project-item-title {
+    color: #FCFCFC;
+    font-weight: 500;
+}
+.project-item-desc {
+    color: #c9c9c9;
+    font-size: 0.8rem;
+    font-style: italic;
+    text-align: center;
+}
+.project-item-skills,
+.project-item-skills span,
+.project-item-links {
+    color: #c9c9c9;
+    font-size: 0.8rem;
+}
+.project-item-links a {
+    color: #fff;
+}
+.project-item-links a:hover {
+    color: #ff0000;
+}
+.project-item-skills, .project-item-skills span {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* Contact Section */
+.contact-section {
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+}
+.contact-container {
+    width: 100%;
+}
+.contact-title {
+    width: 100%;
+    margin: 25px 0;
+}
+.contact-content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.contact-container-left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.left-content {
+    width: 95%;
+    margin-bottom: 25px;
+}
+.contact-container-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.right-content {
+    width: 95%;
+}
+.right-content-title, .contact-form {
+    width: 100%;
+}
+.left-content-details h6 {
+    margin: 20px 0 5px 0;
+}
+.left-content-details h2,
+.left-content-details a {
+    font-size: medium;
+    color: #21252f;
+    text-decoration: none;
+}
+.contact-content-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contact-label {
+    margin: 20px 0 5px 0;
+}
+.contact-field {
+    padding: 10px;
+    border: 1px solid #800000;
+}
+.contact-btn {
+    margin-top: 20px;
+    padding: 15px 10px;
+    background-color: #500000;
+    color: white;
+}
+
+/* Footer Section */
+footer {
+    height: 55px;
+    background-color:#800000;
+}
+footer a,
+footer p,
+footer small {
+    color:#FCFCFC;
+    text-align: center;
+    font-size: 0.8rem;
+}

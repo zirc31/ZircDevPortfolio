@@ -1,0 +1,35 @@
+/* Montserrat */
+@font-face {
+    font-family: "Montserrat";
+    src: url('fonts/Montserrat-Regular.ttf');
+    src: url('fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Montserrat - Medium */
+@font-face {
+    font-family: "Montserrat";
+    src: url('fonts/Montserrat-Medium.ttf');
+    src: url('fonts/Montserrat-Medium.ttf') format('truetype');
+    font-weight:500;
+    font-style: normal;
+}
+
+/* Titillium Web */
+@font-face {
+    font-family: "Titillium Web";
+    src: url('fonts/TitilliumWeb-Regular.ttf');
+    src: url('fonts/TitilliumWeb-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Titillium Web - Bold */
+@font-face {
+    font-family: "Titillium Web";
+    src: url('fonts/TitilliumWeb-Bold.ttf');
+    src: url('fonts/TitilliumWeb-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
