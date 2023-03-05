@@ -9,6 +9,7 @@
         top: 0;
         position:fixed;
         background-color:rgba(252, 252, 252, 0.95);
+        height: 85px;
     }
     .navigation ul {
         justify-content:right;

@@ -5,36 +5,31 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link type="text/css" rel="stylesheet" href="style.css" >
+        <link type="text/css" rel="stylesheet" href="menu.css" >
         <link type="text/css" rel="stylesheet" href="media-queries.css" >
         <link type="text/css" rel="stylesheet" href="font.css" >
 
-        <title>Zirc Albon's Porfolio</title>
+        <title>Zirc Albon's Portfolio</title>
     </head>
     <body>
         <header id="header">
-            <div class="logo">
-                <a href="#"><img src="assets/zirc_logo.png" alt="ZircLogo" /></a>
-            </div>
-            <div class="navigation">
-                <ul class="nav-ul flex-centered">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#project">Project</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+            <section class="top-nav">
+                <div class="logo">
+                    <a href=""><img src="assets/zirc_logo.png" alt="ZircLogo" /></a>
+                </div>
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-            </div>
-        </header> <!-- #header -->
+            </section>
+        </header> <!-- header section -->
 
 
         <section class="hero-section">
@@ -69,9 +64,9 @@
         </section> <!-- .hero-section -->
 
         <div class="scroll-btn-container">
-            <a href="#header">
+            <a href="#">
                 <div class="scroll-up-btn">
-                    <small>Back to Top</small>
+                    <img src="assets/up-back-to-top-btn-maroon.png" alt="Back to top button"/>
                 </div>
             </a>
         </div> <!-- .scroll-btn-container -->
@@ -230,7 +225,7 @@
                                 <h2>Get In Touch</h2>
                                 <p>Kindly fill out all required fields.</p>
                             </div>
-                            <form class="contact-form">
+                            <form method="POST" id="getInTouch" name="getInTouch" class="contact-form" onsubmit = "">
                                 <div class="contact-content-item">
                                     <label class="contact-label">Fullname</label>
                                     <input
