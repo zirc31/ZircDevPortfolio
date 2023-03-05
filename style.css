@@ -33,6 +33,8 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.flex-text-center {
     text-align: center;
 }
 
