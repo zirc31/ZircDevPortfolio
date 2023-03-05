@@ -61,8 +61,9 @@
     .about-content-right {
         font-size:1.5rem;
     }
-    .section-hr {
-        width: 35%;
+
+    .about-grid-container {
+        grid-template-columns: 1fr 1fr;
     }
 
     .project-grid-container {
@@ -86,7 +87,7 @@
     .hero-job {
         font-size:3rem;
         font-weight:700;
-    }    
+    }
     .project-grid-container {
         grid-template-columns: 1fr 1fr 1fr;
     }
