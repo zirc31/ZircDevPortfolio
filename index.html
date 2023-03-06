@@ -17,6 +17,8 @@
         <link rel="icon" type="image/png" sizes="16x16" href="zirc-favicon/favicon-16x16.png">
         <link rel="manifest" href="zirc-favicon/site.webmanifest">
 
+        <script src="script.js" defer></script>
+
         <title>Zirc Albon's Portfolio</title>
     </head>
     <body>
@@ -275,13 +277,14 @@
                 <div class="contact-content">
                     <div class="contact-container-right">
                         <div class="right-content">
-                            <form method="POST" id="getInTouch" name="getInTouch" class="contact-form" action = "send.php">
+                            <form method="POST" id="getInTouch" name="getInTouch" class="contact-form" action = "">
                                 <div class="contact-content-item">
                                     <label class="contact-label">Fullname</label>
                                     <input
                                         class="contact-field"
                                         type="text"
-                                        name="Name"
+                                        id="name"
+                                        name="name"
                                         placeholder="Input fullname"
                                         required
                                     />
@@ -291,7 +294,8 @@
                                     <input
                                         class="contact-field"
                                         type="email"
-                                        name="Email"
+                                        id="email"
+                                        name="email"
                                         placeholder="Input e-mail"
                                         required
                                     />
@@ -301,7 +305,8 @@
                                     <input
                                         class="contact-field"
                                         type="number"
-                                        name="Number"
+                                        id="number"
+                                        name="number"
                                         placeholder="Input contact number"
                                         required
                                     />
@@ -312,10 +317,13 @@
                                         class="contact-field"
                                         cols="30"
                                         rows="5"
-                                        name="Message"                  
+                                        id="message"
+                                        name="message"
                                         placeholder="Input message"
                                         required
                                     ></textarea>
+                                </div>
+                                <div class="git-form-msg-err">
                                 </div>
                                 <div class="contact-content-item">
                                     <button
@@ -325,7 +333,7 @@
                                 </div>
                             </form>
                             <div class="flex-centered">
-                                <br /><br />
+                                <br /><br /><br />
                                 <p>or send me an email to: <a href="mailto:zirc.developer@gmail.com" target="_blank">zirc.developer [at] gmail [dot] com</a>.</p>
                             </div>
                         </div> <!-- .right-content -->
