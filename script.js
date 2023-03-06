@@ -59,17 +59,6 @@ function submitter(thisEvent) {
             message: gitFormMessage.value
         }
         gitMailPost(gitObj);
-
-        // if( jsonResponse.status == 'success' ) {
-        //     clearForm();
-        //     gitMessageErr = '';
-        //     gitMessageErr += `<center><small><strong>Message sent successfully!</strong></small></center>`;
-        //     gitFormMsgErrDiv.innerHTML = gitMessageErr;
-        //     gitFormMsgErrDiv.style.color = 'blue';
-        //     setTimeout(()=> {
-        //         clearForm();
-        //     },2000);
-        // }
     }
 }
 
