@@ -277,7 +277,7 @@
                 <div class="contact-content">
                     <div class="contact-container-right">
                         <div class="right-content">
-                            <form method="POST" id="getInTouch" name="getInTouch" class="contact-form" action = "">
+                            <form id="getInTouch" name="getInTouch" class="contact-form">
                                 <div class="contact-content-item">
                                     <label class="contact-label">Fullname</label>
                                     <input
@@ -329,10 +329,10 @@
                                     <button
                                         class="contact-btn"
                                         type="submit"
-                                    >Submit</button>
+                                    >Send message</button>
                                 </div>
                             </form>
-                            <div class="flex-centered">
+                            <div id="getInTouch-mail-to" class="flex-centered">
                                 <br /><br /><br />
                                 <p>or send me an email to: <a href="mailto:zirc.developer@gmail.com" target="_blank">zirc.developer [at] gmail [dot] com</a>.</p>
                             </div>
@@ -341,6 +341,9 @@
                 </div> <!-- .contact-content -->
             </div> <!-- .contact-container  -->
         </section> <!-- .contact-section -->
+
+        <div id="msg-modal">
+        </div>
 
         <footer id="footer-container" class="flex-centered">
             <p>

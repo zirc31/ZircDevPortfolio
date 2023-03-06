@@ -1,5 +1,4 @@
-//
-const url = '';
+const gitMailerPostUrl = 'https://script.google.com/macros/s/AKfycbxMsMRwKsyBH7Ps6cKmsIqev_zsBxQZwezKE-OKuRXYfQQNv56QlJVLIVTZk9KN2xWH3w/exec';
 const gitForm = document.querySelector('#getInTouch');
 const gitFormName = document.querySelector('#name');
 const gitFormEmail = document.querySelector('#email');
@@ -49,25 +48,97 @@ function submitter(thisEvent) {
         gitFormMsgErrDiv.style.color = 'red';
         // this will clear the .git-form-msg-err div after 2k miliseconds or 2 seconds.
         setTimeout(()=> {
-            clearForm();
+            clearFormBorder();
         },2000);
     } else {
-        clearForm();
-        console.log(`Form submitted successfully!`);
+        clearFormBorder();
+        const gitObj = {
+            name: gitFormName.value,
+            email: gitFormEmail.value,
+            number: gitFormNumber.value,
+            message: gitFormMessage.value
+        }
+        gitMailPost(gitObj);
+
+        // if( jsonResponse.status == 'success' ) {
+        //     clearForm();
+        //     gitMessageErr = '';
+        //     gitMessageErr += `<center><small><strong>Message sent successfully!</strong></small></center>`;
+        //     gitFormMsgErrDiv.innerHTML = gitMessageErr;
+        //     gitFormMsgErrDiv.style.color = 'blue';
+        //     setTimeout(()=> {
+        //         clearForm();
+        //     },2000);
+        // }
+    }
+}
+
+function clearForm() {
+    gitFormMsgErrDiv.innerHTML = '';
+    gitFormName.value = '';
+    gitFormEmail.value = '';
+    gitFormNumber.value = '';
+    gitFormMessage.value = '';
+}
+function clearFormBorder() {
+    gitFormMsgErrDiv.innerHTML = '';
+    gitFormName.style.borderColor = '';
+    gitFormEmail.style.borderColor = '';
+    gitFormNumber.style.borderColor = '';
+    gitFormMessage.style.borderColor = '';
+}
+
+function gitMailPost(data) {
+    console.log(data);
+    fetch(gitMailerPostUrl,{
+        method: 'POST',
+        body:JSON.stringify(data)
+    })
+    .then(res => res.json())
+    .then(json => {
+        checkJsonResult(json);    
+    })
+}
+function checkJsonResult(jsonData) {
+    let saveJson = jsonData;
+
+    if ( saveJson.status == 'success' ) {
+        clearFormBorder();
+        const msgModal = document.querySelector('#msg-modal');
+        msgModal.classList.add(`msg-modal`);
+        msgModal.classList.add(`flex-column-centered`);
+        msgModal.classList.add(`flex-text-center`);
+        msgModal.innerHTML = `
+            <h3>Message sent successfully!</h3><br />
+            <h4>Please check your inbox, including your spam or junk folders, to ensure that you have received it.</h4><br />
+            <p><small>If you have any further questions or concerns, please don't hesitate to reach out.</small></p>
+        `;
+
+        // wait for five seconds to exit modal.
+        setTimeout(()=> {
+            document.removeEventListener('click', document);
+            document.removeEventListener('keydown', keyPressed);
+            location.reload();
+        },5000);
+
+        // when mouse click, then reload page.
+        document.addEventListener('click', () => {
+                document.removeEventListener('click', document);
+                document.removeEventListener('keydown', keyPressed);
+                location.reload();
+        });
+
+        // if key pressed, then reload page.
+        let keyPressed = document.addEventListener('keydown', pressedKey);
+        function pressedKey(keyPressed){
+            switch (keyPressed.code) {
+                default:
+                    document.removeEventListener('click', document);
+                    document.removeEventListener('keydown', keyPressed);
+                    location.reload();
+                    break;
+            }
+        }
     }
 
-    function clearForm() {
-        gitFormMsgErrDiv.innerHTML = '';
-        gitFormName.style.borderColor = '';
-        gitFormEmail.style.borderColor = '';
-        gitFormNumber.style.borderColor = '';
-        gitFormMessage.style.borderColor = '';
-    }
-
-    console.log(gitFormName);
-    console.log(gitFormName.value.length);
-    console.log(gitFormMsgErrDiv);
-    console.log(gitMessageErr);
-
-    
 }

@@ -371,6 +371,21 @@ section {
     color: white;
 }
 
+.msg-modal {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 9999;
+}
+.msg-modal h3,
+.msg-modal h4,
+.msg-modal p small {
+    color: white;
+}
+
 /* Footer Section */
 footer {
     height: 55px;
