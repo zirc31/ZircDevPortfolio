@@ -24,6 +24,7 @@ const App = () => {
       <div className="App">
         <Routes>
           <Route path='/' element={<FrontPage /> } />
+          <Route path='/index.html' element={<FrontPage /> } />
           <Route path='*' element={<NotFound /> } />
         </Routes>
       </div>
