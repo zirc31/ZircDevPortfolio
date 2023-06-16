@@ -1,0 +1,86 @@
+.logo {
+  width: 45px;
+  height: 45px;
+}
+
+.dummy {
+  width: 50px;
+  height: 300px;
+}
+
+.z-bg-primary {
+  background-color: #800000;
+}
+.z-cl-primary, .z-cl-spn {
+  color: #800000;
+}
+.z-cl-spn {
+  font-weight: bold;
+}
+.z-cl-secondary {
+  color: #2f2f2f;
+}
+
+.footer-spacing {
+  height: 100px;
+}
+
+.z-divider-r80 {
+  border: 1px solid #800000;
+}
+.z-divider-w {
+  border: 1px solid #fff;
+}
+
+/* Skills Section */
+.skills-item {
+  width: 80%;
+  text-align: center;
+}
+.skills-item span {
+  padding: 10px;
+  margin: 5px; 
+  color: #800000;
+  font-weight: 700;
+  background-color:#FCFCFC;
+  border: 1px solid #800000;
+  display: inline-block;
+  box-shadow: 2px 3px #21252f;
+
+}
+.skills-item-desc p {
+  color: #000;
+  margin-top: 10px;
+  display: list-item;
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+/*  *  */
+.bd-red {
+  border: 1px solid red;
+}
+.bd-black {
+  border: 1px solid black;
+}
+.bd-blue {
+  border: 1px solid blue;
+}
+
+.hideOnSM {
+  display: block;
+}
+
+@media only screen and (min-width: 768px){
+  .hideOnSM {
+    display: none;
+  }
+  .footer-spacing {
+    height: 70px;
+  }
+}
+@media only screen and (min-width: 992px){
+  .footer-spacing {
+    height: 75px;
+  }
+}
