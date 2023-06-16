@@ -18,9 +18,7 @@ const Projects = () => {
                     <h1 className='text-6xl font-bold'>MY PROJECTS</h1>
                     <div className='z-divider-w my-5'></div>
                 </div>
-
                 <div className='grid gap-7 sm:grid-cols-1 md:grid-cols-3 my-20'>
-                    
                     
                     <div className="w-full text-center">
                         <img src={ aniflixProj } alt="Aniflix." />
@@ -120,7 +118,6 @@ const Projects = () => {
                             <Link to="https://github.com/zirc31/ToDoListApp" target="_blank">Git</Link> | <Link to="https://todolistapp-zircdev.netlify.app/" target="_blank">View site</Link>
                         </div>
                     </div>
-
 
                 </div>
             </div>
