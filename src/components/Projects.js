@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import aniflixProj from '../assets/aniflix.png';
 import hayleyTravelProj from '../assets/a-travel-website-for_hayleytravel_thumb.min.png';
 import aSimpleJavaScriptBrowserGame from '../assets/p2-js-game-zircdev_thumb.min.png';
 import simpleHtmlCssPortfolio from '../assets/zirc_thumbnail.png';
@@ -22,7 +23,7 @@ const Projects = () => {
                     
                     
                     <div className="w-full text-center">
-                        <img src={ hayleyTravelProj } alt="Aniflix." />
+                        <img src={ aniflixProj } alt="Aniflix." />
                         <div className="project-item-title">
                             Aniflix
                         </div>
@@ -49,7 +50,7 @@ const Projects = () => {
                             Skills : <span>ReactJS</span> <span>NodeJS</span> <span>ExpresJS</span> <span>MongoDB</span>
                         </div>
                         <div className="project-item-links">
-                            <Link to="#" target="_blank">Git</Link> | <Link to="#" target="_blank">View site</Link>
+                            <Link to="https://github.com/zirc31/hayleytravel-frontend" target="_blank">Git</Link> | <Link to="#" target="_blank">View site</Link>
                         </div>
                     </div>
 

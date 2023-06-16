@@ -56,6 +56,72 @@
   list-style-position: inside;
 }
 
+/* Contact Section */
+.contact-section {
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+}
+.contact-container {
+  width: 100%;
+}
+.contact-title {
+  width: 100%;
+  margin: 25px 0;
+}
+.contact-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.contact-container-left {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.left-content {
+  width: 95%;
+  margin-bottom: 25px;
+}
+.contact-container-right {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.right-content {
+  width: 95%;
+}
+.right-content-title, .contact-form {
+  width: 100%;
+}
+.left-content-details h6 {
+  margin: 20px 0 5px 0;
+}
+.left-content-details h2,
+.left-content-details a {
+  font-size: medium;
+  color: #21252f;
+  text-decoration: none;
+}
+.contact-content-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.contact-label {
+  margin: 20px 0 5px 0;
+}
+.contact-field {
+  padding: 10px;
+  border: 1px solid #800000;
+}
+.contact-btn {
+  margin-top: 20px;
+  padding: 15px 10px;
+  background-color: #500000;
+  color: white;
+}
+
 /*  *  */
 .bd-red {
   border: 1px solid red;
