@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import About from '../components/About';
@@ -7,6 +8,8 @@ import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 
 const FrontPage = () => {
+
+    const navigate = useNavigate();
 
     const links = [
         { name: 'CV', href: 'https://drive.google.com/drive/folders/1V-nIJEQhsYCkqr7XEFuqO8XqQS5UrFy3?usp=share_link' },
@@ -42,16 +45,18 @@ const FrontPage = () => {
                     </h2>
                 </div>
                 <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-                    <button
-                        type="button"
-                        className="bg-red-800 text-white font-medium border-2 border-red-800 px-8 py-2 ">
-                        Got a project? Let's talk.
-                    </button>
-                    <button
-                        type="button"
+                    <Link to="#contact">
+                        <span
+                            // type="button"
+                            className="bg-red-800 text-white font-medium border-2 border-red-800 px-8 py-2 ">
+                            Got a project? Let's talk.
+                        </span>
+                    </Link>
+                    <span
+                        // type="button"
                         className="bg-white text-red-800 font-medium border-2 border-red-800 px-8 py-2 ">
                         Hire Me
-                    </button>
+                    </span>
                 </div>
                 <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
                     <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">

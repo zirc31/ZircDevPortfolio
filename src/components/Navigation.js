@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useRef } from 'react';
+import zircLogo from '../assets/zirc_logo.png';
 
 const Navigation = () => {
 
@@ -22,7 +23,7 @@ const Navigation = () => {
             <div id="home"></div>
             <nav className="z-50 flex items-center justify-between flex-wrap bg-slate-50 bg-opacity-80 sticky top-0 p-6">
                 <div className="flex items-center flex-shrink-0 text-gray-900 mr-6">
-                    <img className="logo mr-2" src="https://p1-htmlcss-zircdev.netlify.app/assets/zirc_logo.png" alt='Zirc Logo' />
+                    <img className="logo mr-2" src={ zircLogo } alt='Zirc Logo' />
                     <span className="font-semibold text-xl tracking-tight">&nbsp;</span>
                 </div>
                 <div className="block lg:hidden">
@@ -52,7 +53,7 @@ const Navigation = () => {
                         </a>
                     </div>
                     <div>
-                        <a href="/#" className="inline-block text-sm px-4 py-2 leading-none border rounded bg-red-800 text-white border-red-800 hover:border-red-800 hover:text-red-900 hover:bg-white mt-4 lg:mt-0">I'm online let's chat</a>
+                        <button className="inline-block text-sm px-4 py-2 leading-none border rounded bg-red-800 text-white border-red-800 hover:border-red-800 hover:text-red-900 hover:bg-white mt-4 lg:mt-0">I'm online send me a message</button>
                     </div>
                 </div>
             </nav>
