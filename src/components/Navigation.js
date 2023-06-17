@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useRef } from 'react';
+import { HashLink } from 'react-router-hash-link';
 import zircLogo from '../assets/zirc_logo.png';
 
 const Navigation = () => {
@@ -53,7 +54,9 @@ const Navigation = () => {
                         </a>
                     </div>
                     <div>
-                        <button className="inline-block text-sm px-4 py-2 leading-none border rounded bg-red-800 text-white border-red-800 hover:border-red-800 hover:text-red-900 hover:bg-white mt-4 lg:mt-0">I'm online send me a message</button>
+                        <HashLink to="/#contact">
+                            <button className="inline-block text-sm px-4 py-2 leading-none border rounded bg-red-800 text-white border-red-800 hover:border-red-800 hover:text-red-900 hover:bg-white mt-4 lg:mt-0">I'm online send me a message</button>
+                        </HashLink>
                     </div>
                 </div>
             </nav>
