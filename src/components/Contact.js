@@ -35,10 +35,16 @@ const Contact = () => {
         axios.post( `${endPointUrl}/app/endpoint/${endPointToken}`, requestBody ).then( response => {
             // console.log( response );
             // console.log( response.headers );
+            if (response.status === 200 || response.status === 201 ){
+                showSuccess();
+            } else {
+                let err = 'Error code 101: Please contact support!';
+                console.error({ error: err });
+                setErrMessage(err);
+            }
         }).catch((error) => {
             console.error(error);
         });
-        showSuccess();
     };
 
     const handleSendForm = (e) => {
