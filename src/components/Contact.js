@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import { Link } from "react-router-dom";
 import axios from 'axios';
 
 const Contact = () => {
@@ -133,7 +134,7 @@ const Contact = () => {
                                     Message successfully submitted!
                                 </h2>
                                 <p className="w-full text-center text-gray-700 md:text-lg">
-                                    We have received your message and would like to thank you for writing to us. If your inquiry is urgent, you may contact us via Facebook or Linkedin.
+                                    We have received your message and would like to thank you for writing to us. If your inquiry is urgent, you may contact us via <Link to="https://www.facebook.com/zircitsolutions" target="_blank">Facebook</Link> or <Link to="https://www.linkedin.com/in/cx31-uiuxdev/" target="_blank">Linkedin</Link>.
                                 </p>
                             </div>
                         </>
