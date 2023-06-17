@@ -3,6 +3,9 @@ import { useState } from 'react';
 import { Link } from "react-router-dom";
 import axios from 'axios';
 
+const endPointUrl = process.env.REACT_APP_ENDPOINT_URL;
+const endPointToken = process.env.REACT_APP_zAppToken;
+
 const Contact = () => {
 
     const [ firstName, setFirstName ] = useState('');
@@ -11,26 +14,38 @@ const Contact = () => {
     const [ contactNumber, setContactNumber ] = useState('');
     const [ message, setMessage ] = useState('');
     const [ errMessage, setErrMessage ] = useState('');
-    const [ successMessage, setSuccessMessage ] = useState('false');
+    const [ successMessage, setSuccessMessage ] = useState(false);
+
+    const requestBody = {
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        contactNumber: contactNumber,
+        message: message
+    };
+
+    const showSuccess = () => {
+        setSuccessMessage(true);
+        setTimeout(() => {
+            setSuccessMessage(false);
+        }, 5000);
+    };
 
     const submitForm = () => {
-        
+        axios.post( `${endPointUrl}/app/endpoint/${endPointToken}`, requestBody ).then( response => {
+            // console.log( response );
+            // console.log( response.headers );
+        }).catch((error) => {
+            console.error(error);
+        });
+        showSuccess();
     };
 
     const handleSendForm = (e) => {
 
         e.preventDefault();
 
-        // const formBody = {
-        //     firstName: firstName,
-        //     lastName: lastName,
-        //     email: email,
-        //     contactNumber: contactNumber,
-        //     message: message
-        // }
-        // console.log( formBody );
-
-        // validation
+        // email validation
         if ( /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email) ) {
             setErrMessage('');
         } else {
@@ -43,8 +58,7 @@ const Contact = () => {
             setLastName('');
             setEmail('');
             setContactNumber('');
-            setMessage('');  
-
+            setMessage('');
             submitForm();
         }
 
@@ -63,7 +77,7 @@ const Contact = () => {
                         <div className='z-divider-r80 my-5'></div>
                     </div>
                     {
-                        !successMessage &&
+                        !successMessage ?
                         <>
                             <div className="flex flex-wrap -mx-3 mb-6">
                                 <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -125,16 +139,14 @@ const Contact = () => {
                                 </div>
                             </div>
                         </>
-                    }
-                    {
-                        successMessage &&
+                        :
                         <>
                             <div className="flex flex-wrap -mx-3 mb-6 p-20 sm:p-10">
                                 <h2 className="w-full text-center font-sans text-3xl font-bold text-gray-900 sm:text-4xl md:mx-auto">
                                     Message successfully submitted!
                                 </h2>
                                 <p className="w-full text-center text-gray-700 md:text-lg">
-                                    We have received your message and would like to thank you for writing to us. If your inquiry is urgent, you may contact us via <Link to="https://www.facebook.com/zircitsolutions" target="_blank">Facebook</Link> or <Link to="https://www.linkedin.com/in/cx31-uiuxdev/" target="_blank">Linkedin</Link>.
+                                    We have received your message and would like to thank you for writing to us. If your inquiry is urgent, you may contact us via <Link to="https://www.facebook.com/zircitsolutions" target="_blank" className='z-cl-spn'>Facebook</Link> or <Link to="https://www.linkedin.com/in/cx31-uiuxdev/" target="_blank" className='z-cl-spn'>Linkedin</Link>.
                                 </p>
                             </div>
                         </>
