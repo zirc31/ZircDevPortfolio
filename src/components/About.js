@@ -28,15 +28,15 @@ const About = () => {
                     <p className='z-cl-primary'>I specialize in providing comprehensive web development services that encompass all aspects of the development process:</p>
                     <h1 className='text-2xl font-bold mt-2 z-cl-primary'>UI/UX Design</h1>
                     <p>
-                        <small>I understand the importance of creating user-centric designs that are visually appealing, intuitive, and easy to navigate. I work closely with clients to create designs that align with their brand values and meet the needs of their target audience.</small>
+                        I understand the importance of creating user-centric designs that are visually appealing, intuitive, and easy to navigate. I work closely with clients to create designs that align with their brand values and meet the needs of their target audience.
                     </p>
                     <h1 className='text-2xl font-bold mt-2 z-cl-primary'>Front-end Development</h1>
                     <p>
-                        <small>I specialize in creating responsive and interactive user interfaces using HTML, CSS, and JavaScript, and ensure that the website looks great on all devices and that users can interact with the website seamlessly.</small>
+                        I specialize in creating responsive and interactive user interfaces using HTML, CSS, and JavaScript, and ensure that the website looks great on all devices and that users can interact with the website seamlessly.
                     </p>
                     <h1 className='text-2xl font-bold mt-2 z-cl-primary'>Back-end Development</h1>
                     <p>
-                        <small>I have experienced in creating robust and scalable web applications using various frameworks, libraries, and programming languages such as PHP, Python, and Node.js, and ensure that the website is secure, fast, and reliable.</small>
+                        I have experienced in creating robust and scalable web applications using various frameworks, libraries, and programming languages such as PHP, Python, and Node.js, and ensure that the website is secure, fast, and reliable.
                     </p>
                 </div>
             </div>

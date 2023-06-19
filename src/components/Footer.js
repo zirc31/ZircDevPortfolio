@@ -18,8 +18,11 @@ const Footer = () => {
                     <span className="sr-only">GitHub account</span>
                 </a>
             </div>
-            <span className="text-sm text-white sm:text-center dark:text-white">© 2023 Design and Coded by: <a href="https://www.facebook.com/zircitsolutions" className="hover:underline">Zirc Albon</a>.
-            </span>
+            <div className="flex mt-4 space-x-6 sm:justify-center md:mt-0">
+                <span className="text-sm text-white sm:text-center dark:text-white">© 2023 Design and Coded by: <a href="https://www.facebook.com/zircitsolutions" className="hover:underline">Zirc Albon</a>.
+                </span>
+            </div>
+            
         </footer>
     </>
   )

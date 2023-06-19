@@ -40,8 +40,9 @@ const FrontPage = () => {
             </div>
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-7xl lg:mx-0">
-                    <h2 className="text-2xl font-extrabold text-white sm:text-4xl">Hi!, I'm Zirc Albon</h2>
+                    {/* <h2 className="text-2xl font-extrabold text-white sm:text-4xl">Hi!, I'm Zirc Albon</h2> */}
                     <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+                        Hi!, I'm Zirc Albon<br />
                         UI / UX Designer &<br />
                         Full-stack Developer
                     </h2>
