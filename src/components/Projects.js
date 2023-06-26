@@ -23,81 +23,81 @@ const Projects = () => {
                     
                     <div className="w-full text-center">
                         <img src={ aniflixProj } alt="Aniflix." />
-                        <div className="project-item-title">
+                        <div className="project-item-title mt-2 font-bold">
                             Aniflix
                         </div>
-                        <div className="project-item-desc">
+                        <div className="project-item-desc italic text-sm font-thin">
                             A Streaming Anime Site with a Real-time Chat integration.
                         </div>
-                        <div className="project-item-skills">
+                        <div className="project-item-skills my-1 text-sm">
                             Skills : <span>Socket.IO</span> <span>ReactJS</span> <span>NodeJS</span> <span>ExpresJS</span> <span>MongoDB</span>
                         </div>
-                        <div className="project-item-links">
+                        <div className="project-item-links text-sm">
                             <Link to="https://github.com/zirc31/aniflix" target="_blank">Git</Link> | <Link to="https://aniflix-web-app.netlify.app" target="_blank">View site</Link>
                         </div>
                     </div>
 
                     <div className="w-full text-center">
                         <img src={ hayleyTravelProj } alt="Hayley Travel website." />
-                        <div className="project-item-title">
+                        <div className="project-item-title mt-2 font-bold">
                             Hayley Travel (Full-stack MERN)
                         </div>
-                        <div className="project-item-desc">
+                        <div className="project-item-desc italic text-sm font-thin">
                             An online Travel Booking website for Hayley Travel.
                         </div>
-                        <div className="project-item-skills">
+                        <div className="project-item-skills my-1 text-sm">
                             Skills : <span>ReactJS</span> <span>NodeJS</span> <span>ExpresJS</span> <span>MongoDB</span>
                         </div>
-                        <div className="project-item-links">
-                            <Link to="https://github.com/zirc31/hayleytravel-frontend" target="_blank">Git</Link> | <Link to="#" target="_blank">View site</Link>
+                        <div className="project-item-links text-sm">
+                            <Link to="https://github.com/zirc31/hayleytravel-frontend" target="_blank">Git</Link> | <Link to="https://hayleytravel.netlify.app/" target="_blank">View site</Link>
                         </div>
                     </div>
 
 
                     <div className="w-full text-center">
                         <img src={ aSimpleJavaScriptBrowserGame } alt="A Simple JavaScript Browser Game." />
-                        <div className="project-item-title">
+                        <div className="project-item-title mt-2 font-bold">
                         A Simple JavaScript Browser Game
                         </div>
-                        <div className="project-item-desc">
+                        <div className="project-item-desc italic text-sm font-thin">
                         A simple JavaScript browser game without using Canvas & Libraries.
                         </div>
-                        <div className="project-item-skills">
+                        <div className="project-item-skills my-1 text-sm">
                         Skills : <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
                         </div>
-                        <div className="project-item-links">
+                        <div className="project-item-links text-sm">
                             <Link to="https://github.com/zirc31/ASimpleJavaScriptFightingGame" target="_blank">Git</Link> | <Link to="https://p2-js-game-zircdev.netlify.app/" target="_blank">View site</Link>
                         </div>
                     </div>
 
                     <div className="w-full text-center">
                         <img src={ oralWellnessDentalClinicApp } alt="Oral Wellness Dental Clinic App." />
-                        <div className="project-item-title">
+                        <div className="project-item-title mt-2 font-bold">
                             Oral Wellness Dental Clinic App
                         </div>
-                        <div className="project-item-desc">
+                        <div className="project-item-desc italic text-sm font-thin">
                             Dental Booking App, with Patient Record Database.
                         </div>
-                        <div className="project-item-skills">
+                        <div className="project-item-skills my-1 text-sm">
                             Skills : <span>Figma to HTML|CSS</span> <span>ReactJS</span> <span>NodeJS</span> <span>ExpresJS</span> <span>MongoDB</span>
                         </div>
-                        <div className="project-item-links">
+                        <div className="project-item-links text-sm">
                             <Link to="https://github.com/zirc31/OralWellnessDentalClinic" target="_blank">Git</Link> | <Link to="https://drive.google.com/file/d/1rbQVbEuZQ62tQaqpuIXZFuO_jEULCK-c/view" target="_blank">Video Demo</Link>
                         </div>
                     </div>
 
                     <div className="w-full text-center">
                         <img src={ simpleHtmlCssPortfolio } alt="Simple HTML+CSS Portfolio." />
-                        <div className="project-item-title">
+                        <div className="project-item-title mt-2 font-bold">
                         Simple HTML+CSS Portfolio
                         </div>
-                        <div className="project-item-desc">
+                        <div className="project-item-desc italic text-sm font-thin">
                         A simple HTML & CSS portfolio built by using Float, Flexbox & Grid.
                         </div>
-                        <div className="project-item-skills">
+                        <div className="project-item-skills my-1 text-sm">
                         Skills : <span>HTML</span> <span>CSS</span>
                         </div>
-                        <div className="project-item-links">
+                        <div className="project-item-links text-sm">
                             <Link to="https://github.com/zirc31/SimpleHtmlCssPortfolio" target="_blank">Git</Link> | <Link to="https://p1-htmlcss-zircdev.netlify.app/" target="_blank">View site</Link>
                         </div>
                     </div>
@@ -105,16 +105,16 @@ const Projects = () => {
 
                     <div className="w-full text-center">
                         <img src={ sendFormViaJsAjaxToGoogleAppsScript } alt="Send Form via JS Ajax to Google Apps Script." />
-                        <div className="project-item-title">
+                        <div className="project-item-title mt-2 font-bold">
                         Send Form via JS Ajax to Google Apps Script.
                         </div>
-                        <div className="project-item-desc">
+                        <div className="project-item-desc italic text-sm font-thin">
                         Using a Google Apps Script as a back-end and to send e-mail.
                         </div>
-                        <div className="project-item-skills">
+                        <div className="project-item-skills my-1 text-sm">
                         Skills : <span>HTML</span> <span>CSS</span> <span>JavaScript</span> <span>AppsScript</span>
                         </div>
-                        <div className="project-item-links">
+                        <div className="project-item-links text-sm">
                             <Link to="https://github.com/zirc31/SimpleHtmlCssPortfolio" target="_blank">Git</Link> | <Link to="https://p1-htmlcss-zircdev.netlify.app/#contact" target="_blank">View site</Link>
                         </div>
                     </div>
@@ -122,16 +122,16 @@ const Projects = () => {
 
                     {/* <div className="w-full text-center">
                         <img src={ toDoListApp } alt="To-Do List App." />
-                        <div className="project-item-title">
+                        <div className="project-item-title mt-2 font-bold">
                         To-Do List App
                         </div>
-                        <div className="project-item-desc">
+                        <div className="project-item-desc italic text-sm font-thin">
                         This is a simple HTML To-Do List App and Styling with Bootstrap.
                         </div>
-                        <div className="project-item-skills">
+                        <div className="project-item-skills my-1 text-sm">
                         Skills : <span>HTML</span> <span>CSS</span> <span>JavaScript</span> <span>Bootstrap</span>
                         </div>
-                        <div className="project-item-links">
+                        <div className="project-item-links text-sm">
                             <Link to="https://github.com/zirc31/ToDoListApp" target="_blank">Git</Link> | <Link to="https://todolistapp-zircdev.netlify.app/" target="_blank">View site</Link>
                         </div>
                     </div> */}
