@@ -1,15 +1,9 @@
 import React from 'react';
-import { HashLink } from 'react-router-hash-link';
 
-const Skills = () => {
-
-/*
-https://icons8.com/icon/20909/html-5
-*/
-
+const SkillsFullContent = () => {
     return (
         <>
-            <div id="skills" className='mb-5'>&nbsp;</div>
+            <div id="skills"></div>
             <div className='w-full flex justify-center bg-slate-200'>
                 <div className='sm:w-full md:container my-20 sm:px-10 md:px-20 z-cl-secondary'>
                     <div>
@@ -54,7 +48,7 @@ https://icons8.com/icon/20909/html-5
                             <span>Docker</span>
                         </div>
                     </div>
-                    {/* <div className='grid sm:grid-cols-1 md:grid-cols-4 my-20 sm:px-10 md:px-20 z-cl-secondary'>
+                    <div className='grid sm:grid-cols-1 md:grid-cols-4 my-20 sm:px-10 md:px-20 z-cl-secondary'>
                         <div className='m-2 p-4 text-center bg-slate-100 shadow-2xl hover:shadow-md'>Proficient in <span className='z-cl-spn'>HTML</span>, <span className='z-cl-spn'>CSS</span>, and <span className='z-cl-spn'>JavaScript</span>, with a strong understanding of front-end web development.</div>
                         <div className='m-2 p-4 text-center bg-slate-100 shadow-2xl hover:shadow-md'>Extensive experience in building responsive and visually appealing web interfaces using <span className='z-cl-spn'>React.js</span> and <span className='z-cl-spn'>Vue.js</span> frameworks.</div>
                         <div className='m-2 p-4 text-center bg-slate-100 shadow-2xl hover:shadow-md'>Skilled in creating server-side applications using <span className='z-cl-spn'>Node.js</span> and <span className='z-cl-spn'>Express.js</span> for efficient and scalable back-end development.</div>
@@ -65,11 +59,6 @@ https://icons8.com/icon/20909/html-5
                         <div className='m-2 p-4 text-center bg-slate-100 shadow-2xl hover:shadow-md'>Experience in <span className='z-cl-spn'>integrating third-party APIs</span> and <span className='z-cl-spn'>libraries</span> to enhance functionality and improve user experience.</div>
                         <div className='m-2 p-4 text-center bg-slate-100 shadow-2xl hover:shadow-md'>Familiarity with <span className='z-cl-spn'>version control systems</span> like <span className='z-cl-spn'>Git</span> and collaborative development workflows using <span className='z-cl-spn'>GitHub</span>.</div>
                         <div className='m-2 p-4 text-center bg-slate-100 shadow-2xl hover:shadow-md'>Excellent communication and collaboration skills, with a proven ability to <span className='z-cl-spn'>work effectively</span> in <span className='z-cl-spn'>team environments</span> and <span className='z-cl-spn'>meet project deadlines</span>.</div>
-                    </div> */}
-                    <div className='w-full flex justify-center'>
-                        <HashLink to="/skills#skills">
-                            <button className="inline-block text-sm px-4 py-2 leading-none border rounded bg-red-800 text-white border-red-800 hover:border-red-800 hover:text-red-900 hover:bg-white mt-4 lg:mt-5">View more . . .</button>
-                        </HashLink>
                     </div>
                 </div>
             </div>
@@ -77,4 +66,4 @@ https://icons8.com/icon/20909/html-5
     )
 }
 
-export default Skills;
+export default SkillsFullContent;

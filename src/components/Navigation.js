@@ -37,21 +37,31 @@ const Navigation = () => {
                 </div>
                 <div ref={ toggleMenuRef } className="w-full block flex-grow lg:flex lg:items-center lg:w-auto sm:hidden">
                     <div className="text-base lg:flex-grow">
-                        <a href="/#home" className="block mt-4 lg:inline-block lg:mt-0 text-gray-900 hover:text-red-900 mr-5 font-semibold">
-                        Home
-                        </a>
-                        <a href="/#about" className="block mt-4 lg:inline-block lg:mt-0 text-gray-900 hover:text-red-900 mr-5 font-semibold">
-                        About
-                        </a>
-                        <a href="/#skills" className="block mt-4 lg:inline-block lg:mt-0 text-gray-900 hover:text-red-900 mr-5 font-semibold">
-                        Skills
-                        </a>
-                        <a href="/#projects" className="block mt-4 lg:inline-block lg:mt-0 text-gray-900 hover:text-red-900 mr-5 font-semibold">
-                        Projects
-                        </a>
-                        <a href="/#contact" className="block mt-4 lg:inline-block lg:mt-0 text-gray-900 hover:text-red-900 font-semibold">
-                        Contact
-                        </a>
+                        <HashLink to="/#home">
+                            <span className="block mt-4 lg:inline-block lg:mt-0 text-gray-900 hover:text-red-900 mr-5 font-semibold">
+                                Home
+                            </span>
+                        </HashLink>
+                        <HashLink to="/about">
+                            <span className="block mt-4 lg:inline-block lg:mt-0 text-gray-900 hover:text-red-900 mr-5 font-semibold">
+                                About
+                            </span>
+                        </HashLink>
+                        <HashLink to="/skills">
+                            <span className="block mt-4 lg:inline-block lg:mt-0 text-gray-900 hover:text-red-900 mr-5 font-semibold">
+                                Skills
+                            </span>
+                        </HashLink>
+                        <HashLink to="/#projects">
+                            <span className="block mt-4 lg:inline-block lg:mt-0 text-gray-900 hover:text-red-900 mr-5 font-semibold">
+                                Projects
+                            </span>
+                        </HashLink>
+                        <HashLink to="/#contact">
+                            <span className="block mt-4 lg:inline-block lg:mt-0 text-gray-900 hover:text-red-900 mr-5 font-semibold">
+                                Contact
+                            </span>
+                        </HashLink>
                     </div>
                     <div>
                         <HashLink to="/#contact">

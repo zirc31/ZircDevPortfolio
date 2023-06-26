@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import aniflixProj from '../assets/aniflix.png';
-import hayleyTravelProj from '../assets/a-travel-website-for_hayleytravel_thumb.min.png';
+import aniflixProj from '../assets/aniflix.min.png';
+import hayleyTravelProj from '../assets/a-travel-website-for_hayleytravel.min.png';
 import aSimpleJavaScriptBrowserGame from '../assets/p2-js-game-zircdev_thumb.min.png';
 import simpleHtmlCssPortfolio from '../assets/zirc_thumbnail.png';
 import sendFormViaJsAjaxToGoogleAppsScript from '../assets/sendform-via-JS-Ajax-To-Google-AppsScript.min.png';
-import toDoListApp from '../assets/ToDoListApp.min.png';
+// import toDoListApp from '../assets/ToDoListApp.min.png';
+import oralWellnessDentalClinicApp from '../assets/OralWellnessDentalClinic_ss.min.png';
 
 const Projects = () => {
     return (
@@ -32,7 +33,7 @@ const Projects = () => {
                             Skills : <span>Socket.IO</span> <span>ReactJS</span> <span>NodeJS</span> <span>ExpresJS</span> <span>MongoDB</span>
                         </div>
                         <div className="project-item-links">
-                            <Link to="https://github.com/zirc31/aniflix" target="_blank">Git</Link> | <Link to="#" target="_blank">View site</Link>
+                            <Link to="https://github.com/zirc31/aniflix" target="_blank">Git</Link> | <Link to="https://aniflix-web-app.netlify.app" target="_blank">View site</Link>
                         </div>
                     </div>
 
@@ -70,6 +71,22 @@ const Projects = () => {
                     </div>
 
                     <div className="w-full text-center">
+                        <img src={ oralWellnessDentalClinicApp } alt="Oral Wellness Dental Clinic App." />
+                        <div className="project-item-title">
+                            Oral Wellness Dental Clinic App
+                        </div>
+                        <div className="project-item-desc">
+                            Dental Booking App, with Patient Record Database.
+                        </div>
+                        <div className="project-item-skills">
+                            Skills : <span>Figma to HTML|CSS</span> <span>ReactJS</span> <span>NodeJS</span> <span>ExpresJS</span> <span>MongoDB</span>
+                        </div>
+                        <div className="project-item-links">
+                            <Link to="https://github.com/zirc31/OralWellnessDentalClinic" target="_blank">Git</Link> | <Link to="https://drive.google.com/file/d/1rbQVbEuZQ62tQaqpuIXZFuO_jEULCK-c/view" target="_blank">Video Demo</Link>
+                        </div>
+                    </div>
+
+                    <div className="w-full text-center">
                         <img src={ simpleHtmlCssPortfolio } alt="Simple HTML+CSS Portfolio." />
                         <div className="project-item-title">
                         Simple HTML+CSS Portfolio
@@ -103,7 +120,7 @@ const Projects = () => {
                     </div>
 
 
-                    <div className="w-full text-center">
+                    {/* <div className="w-full text-center">
                         <img src={ toDoListApp } alt="To-Do List App." />
                         <div className="project-item-title">
                         To-Do List App
@@ -117,7 +134,7 @@ const Projects = () => {
                         <div className="project-item-links">
                             <Link to="https://github.com/zirc31/ToDoListApp" target="_blank">Git</Link> | <Link to="https://todolistapp-zircdev.netlify.app/" target="_blank">View site</Link>
                         </div>
-                    </div>
+                    </div> */}
 
                 </div>
             </div>

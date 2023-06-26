@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import axios from 'axios';
 
 const endPointUrl = process.env.REACT_APP_ENDPOINT_URL;
-const endPointToken = process.env.REACT_APP_zAppToken;
+const endPointToken = process.env.REACT_APP_ENDPOINT_TOKEN;
 
 const Contact = () => {
 

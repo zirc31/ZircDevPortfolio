@@ -1,9 +1,7 @@
 import React from 'react';
 import aboutImg from '../assets/zirc.png';
-// import { Link } from "react-router-dom";
-import { HashLink } from 'react-router-hash-link';
 
-const About = () => {
+const AboutFullContent = () => {
     return (
         <>
             <div id="about" className='mb-5'>&nbsp;</div>
@@ -17,6 +15,16 @@ const About = () => {
                     <h1 className='text-2xl font-medium'>WHO AM I</h1>
                     <h1 className='text-6xl font-bold z-cl-primary'>ZIRC ALBON</h1>
                     <div className='z-divider-r80 my-5'></div>
+                    <p>I have been working as a web and software developer since 2009, and throughout my career, I have gained extensive experience in various programming languages. From the very beginning, I have been passionate about honing my hard coding skills, and I have actively pursued continuous learning and professional development opportunities.</p>
+                    <br />
+                    <p>Over the years, I have dedicated myself to expanding my knowledge base by engaging in online courses and completing a rigorous bootcamp recently. These experiences have allowed me to further enhance my skill set and stay up-to-date with the latest industry practices and technologies.</p>
+                    <br />
+                    <p>As a full-stack developer, I possess a comprehensive understanding of both front-end and back-end development. I have a knack for crafting intuitive user interfaces, ensuring seamless user experiences, and implementing robust and efficient backend solutions.</p>
+                    <br />
+                    <p>In addition to my technical expertise, I am also a strong collaborator and a creative problem-solver. I thrive in dynamic environments, leveraging my skills to develop innovative solutions and contribute to the success of projects.</p>
+                    <br />
+                    <p>Overall, my journey as a web and software developer has been a continuous learning process, and I am excited to apply my expertise and contribute to meaningful projects that make a positive impact.</p>
+                    <br />
                     <p className='font-bold'>I specialize in providing comprehensive web development services that encompass all aspects of the development process:</p>
                     <h1 className='text-2xl font-bold mt-2 z-cl-primary'>UI/UX Design</h1>
                     <p>
@@ -30,13 +38,10 @@ const About = () => {
                     <p>
                         I have experienced in creating robust and scalable web applications using various frameworks, libraries, and programming languages such as PHP, Python, and Node.js, and ensure that the website is secure, fast, and reliable.
                     </p>
-                    <HashLink to="/about#about">
-                        <button className="inline-block text-sm px-4 py-2 leading-none border rounded bg-red-800 text-white border-red-800 hover:border-red-800 hover:text-red-900 hover:bg-white mt-4 lg:mt-5">View more . . .</button>
-                    </HashLink>
                 </div>
             </div>
         </>
     )
 }
 
-export default About;
+export default AboutFullContent;
